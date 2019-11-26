@@ -38,7 +38,18 @@ public class Panel extends JPanel {
 
         //Tamaño del panel
         this.setSize(ANCHO_PANEL, ALTO_PANEL);
+        
+        inicializarComponentes();
 
+    }
+    
+    private void inicializarComponentes(){
+        
+        //Añade label
+        lblUrl= new JLabel("Introduce la URL o el texto: ");
+        this.add(lblUrl);
+        
+        
     }
 
 }
