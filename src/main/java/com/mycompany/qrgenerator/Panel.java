@@ -5,7 +5,10 @@
  */
 package com.mycompany.qrgenerator;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -16,5 +19,10 @@ public class Panel extends JPanel{
      //Tamaño del panel
     public static final int ANCHO_FRAME= 600;
     public static final int ALTO_FRAME= 200;
+    
+    //Atributos del panel
+    JLabel lblUrl, lblFichero;
+    JTextArea txtUrl, txtFichero;
+    JButton btnGenerar, btnCerrar;
     
 }
