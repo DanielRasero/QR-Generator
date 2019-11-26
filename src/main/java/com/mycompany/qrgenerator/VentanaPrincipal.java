@@ -28,7 +28,7 @@ public class VentanaPrincipal extends JFrame {
     private void crearVentana(){
         
         //posición y tamaño de la ventana
-        this.setBounds(600, 150, ANCHO_FRAME, ALTO_FRAME);
+        this.setBounds(400, 150, ANCHO_FRAME, ALTO_FRAME);
         
         //Título para la ventana
         this.setTitle("Generador de códigos QR");
