@@ -5,6 +5,7 @@
  */
 package com.mycompany.qrgenerator;
 
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -24,5 +25,13 @@ public class Panel extends JPanel{
     JLabel lblUrl, lblFichero;
     JTextArea txtUrl, txtFichero;
     JButton btnGenerar, btnCerrar;
+    
+    public Panel(){
+        
+        //Establece el layout del panel
+        //Forma de disponer los elementos internamente
+        this.setLayout(new FlowLayout());
+        
+    }
     
 }
