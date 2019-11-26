@@ -19,8 +19,8 @@ import javax.swing.JTextArea;
 public class Panel extends JPanel{
     
      //Tamaño del panel
-    public static final int ANCHO_FRAME= 600;
-    public static final int ALTO_FRAME= 200;
+    public static final int ANCHO_PANEL= 600;
+    public static final int ALTO_PANEL= 200;
     
     //Atributos del panel
     JLabel lblUrl, lblFichero;
@@ -35,6 +35,9 @@ public class Panel extends JPanel{
         
         //Establecemos colorde fondo al panel
         this.setBackground(Color.red);
+        
+        //Tamaño del panel
+        this.setSize(ANCHO_PANEL, ALTO_PANEL);
         
     }
     
