@@ -16,8 +16,12 @@ import javax.swing.JFrame;
 public class VentanaPrincipal extends JFrame {
  
     //Tamaño de la ventana
-    public static final int ANCHO_FRAME= 600;
-    public static final int ALTO_FRAME= 200;
+    public static final int ANCHO_FRAME = 600;
+    public static final int ALTO_FRAME = 200;
+    
+    //Atributo. Cuando un objeto de una clase está contenido
+    //como atributo de otra se conoce como Composición
+    private Panel panel;
     
     public VentanaPrincipal(){
         

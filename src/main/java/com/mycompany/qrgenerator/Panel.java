@@ -16,29 +16,29 @@ import javax.swing.JTextArea;
  *
  * @author daniel
  */
-public class Panel extends JPanel{
-    
-     //Tamaño del panel
-    public static final int ANCHO_PANEL= 600;
-    public static final int ALTO_PANEL= 200;
-    
+public class Panel extends JPanel {
+
+    //Tamaño del panel
+    public static final int ANCHO_PANEL = 600;
+    public static final int ALTO_PANEL = 200;
+
     //Atributos del panel
     JLabel lblUrl, lblFichero;
     JTextArea txtUrl, txtFichero;
     JButton btnGenerar, btnCerrar;
-    
-    public Panel(){
-        
+
+    public Panel() {
+
         //Establece el layout del panel
         //Forma de disponer los elementos internamente
         this.setLayout(new FlowLayout());
-        
+
         //Establecemos colorde fondo al panel
         this.setBackground(Color.red);
-        
+
         //Tamaño del panel
         this.setSize(ANCHO_PANEL, ALTO_PANEL);
-        
+
     }
-    
+
 }
