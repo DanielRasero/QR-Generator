@@ -26,6 +26,7 @@ public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal(){
         
         crearVentana();
+        panel=new Panel();
         
     }
     
