@@ -11,4 +11,12 @@ package com.mycompany.qrgenerator;
  */
 public class Programa {
     
+    public static void main(String[] args) {
+        
+        //Instanciamos ventana
+        
+        VentanaPrincipal ventana= new VentanaPrincipal();
+        
+    }
+    
 }
