@@ -5,6 +5,7 @@
  */
 package com.mycompany.qrgenerator;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -31,6 +32,9 @@ public class Panel extends JPanel{
         //Establece el layout del panel
         //Forma de disponer los elementos internamente
         this.setLayout(new FlowLayout());
+        
+        //Establecemos colorde fondo al panel
+        this.setBackground(Color.red);
         
     }
     
