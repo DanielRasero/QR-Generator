@@ -11,6 +11,7 @@ import javax.swing.JFrame;
  *
  * @author daniel
  */
+
 //Clase que hereda de JFrame
 public class VentanaPrincipal extends JFrame {
 
