@@ -7,8 +7,11 @@ package com.mycompany.qrgenerator;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -65,10 +68,29 @@ public class Panel extends JPanel {
         //Añade el botón de generar QR
         btnGenerar = new JButton("Generar código QR");
         this.add(btnGenerar);
+        btnGenerar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                if (txtUrl.getText().isEmpty() || txtFichero.getText().isEmpty()) {
+                     
+                    JOptionPane.showMessageDialog(null, "Has dejado algún campo vacío");
+                    
+                }
+
+            }
+        });
 
         //Añade el botón de cerrar ventan
         btnCerrar = new JButton("Generar código QR");
         this.add(btnCerrar);
+
+        btnCerrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+            }
+        });
 
     }
 
