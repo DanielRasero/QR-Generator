@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 /**
  *
@@ -24,7 +25,7 @@ public class Panel extends JPanel {
 
     //Atributos del panel
     JLabel lblUrl, lblFichero;
-    JTextArea txtUrl, txtFichero;
+    JTextField txtUrl, txtFichero;
     JButton btnGenerar, btnCerrar;
 
     public Panel() {
@@ -38,18 +39,37 @@ public class Panel extends JPanel {
 
         //Tamaño del panel
         this.setSize(ANCHO_PANEL, ALTO_PANEL);
-        
+
         inicializarComponentes();
 
     }
-    
-    private void inicializarComponentes(){
-        
+
+    private void inicializarComponentes() {
+
         //Añade label
-        lblUrl= new JLabel("Introduce la URL o el texto: ");
+        lblUrl = new JLabel("Introduce la URL o el texto: ");
         this.add(lblUrl);
-        
-        
+
+        //Añade el campo de texto para poner el URL
+        txtUrl = new JTextField(40);
+        this.add(txtUrl);
+
+        //Añade la etiqueta para indicar nombre fichero
+        lblFichero = new JLabel("Indica el nombre del fichero: ");
+        this.add(lblFichero);
+
+        //Añade el campo de texto para poner el URL
+        txtFichero = new JTextField(20);
+        this.add(txtFichero);
+
+        //Añade el botón de generar QR
+        btnGenerar = new JButton("Generar código QR");
+        this.add(btnGenerar);
+
+        //Añade el botón de cerrar ventan
+        btnCerrar = new JButton("Generar código QR");
+        this.add(btnCerrar);
+
     }
 
 }
